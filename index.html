@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page_title">Lluís Galindo · Fullstack Developer & Project Manager</title>
+  <meta name="description" data-i18n-attr="content:page_description" content="Sitio web personal de Lluís Galindo, Fullstack Developer & Project Manager. Proyectos, trayectoria, cheatsheets y stack tecnológico moderno.">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="icon" type="image/png" href="./imagenes/favicon.png">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css?v=1.1">
+</head>
+<body>
+  <!-- Header con selector de idiomas exclusivo -->
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="lang-selector" role="navigation" data-i18n-attr="aria-label:lang_selector_aria" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn active" data-lang="es" onclick="canviarIdioma('es')" title="Español">ESP</button>
+          <button type="button" class="lang-btn" data-lang="ca" onclick="canviarIdioma('ca')" title="Català">CAT</button>
+          <button type="button" class="lang-btn" data-lang="en" onclick="canviarIdioma('en')" title="English">ENG</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <div class="hero-main">
+        <div class="hero-avatar">
+          <img src="https://res.cloudinary.com/dpfywsrok/image/upload/v1772722823/Dibuix_Lluis_p_lwi6kw.png" alt="Lluís Galindo" width="76" height="76" fetchpriority="high">
+        </div>
+        <div class="hero-text">
+          <h1><span data-i18n="hero_title">Lluís Galindo</span> <span class="id">@lluisgalindo</span></h1>
+          <div class="hero-role">
+            <span data-i18n="hero_role">Fullstack Developer & Project Manager</span>
+            <span class="status-badge"><span class="status-dot"></span><span data-i18n="hero_status">Disponible para proyectos</span></span>
+          </div>
+        </div>
+        <a class="pill contact" href="#contacto" data-i18n-attr="title:hero_contact_btn" title="Contacto">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+            <path d="m3.5 7 8.5 6 8.5-6"></path>
+          </svg>
+          <span data-i18n="hero_contact_btn">Contacto</span>
+        </a>
+      </div>
+
+      <p class="hero-bio" data-i18n="hero_bio_p1">
+        Desarrollador full-stack y project manager especializado en soluciones web modernas, arquitecturas escalables y flujos de trabajo impulsados por IA. Con más de 20 años en el sector IT combinando liderazgo técnico, desarrollo de software y docencia.
+      </p>
+      <p class="hero-bio" data-i18n="hero_bio_p2">
+        Especializado en el ecosistema <strong>JavaScript / TypeScript</strong>, <strong>React</strong>, <strong>Node.js</strong> y bases de datos relacionales y NoSQL, con foco en clean code, rendimiento y experiencia de usuario.
+      </p>
+    </section>
+
+    <!-- Featured Spotlight Card -->
+    <section class="fade-in" style="animation-delay: 0.08s;">
+      <h2 class="eyebrow" data-i18n="featured_eyebrow">Proyecto Destacado</h2>
+      <a class="card featured" href="#skills" data-i18n-attr="title:featured_title" title="Plataforma Web Moderna & Workflows IA">
+        <div class="featured-body">
+          <div class="featured-top">
+            <div class="featured-head">
+              <h3 data-i18n="featured_title">Plataforma Web Moderna & Workflows IA</h3>
+              <span class="arrow-btn" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow a">
+                  <path d="M5 12h14M13 6l6 6-6 6"></path>
+                </svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow b">
+                  <path d="M5 12h14M13 6l6 6-6 6"></path>
+                </svg>
+              </span>
+            </div>
+            <p data-i18n="featured_desc">Diseño e implementación de arquitectura web completa orientada a performance, accesibilidad y modularidad. Integración de tooling inteligente y pipelines automatizados con agentes de programación.</p>
+          </div>
+          <div class="stats mono">
+            <span class="stat-tag" data-i18n="featured_metric_exp">20+ años IT</span>
+            <span class="stat-tag" data-i18n="featured_metric_companies">Buff · Smith&Nephew</span>
+            <span class="stat-tag" data-i18n="featured_metric_role">Lead Instructor</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Trayectoria / Background -->
+    <section class="fade-in" style="animation-delay: 0.16s;">
+      <h2 class="eyebrow" data-i18n="timeline_eyebrow">Trayectoria</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when mono" data-i18n="timeline_job1_when">2024 - Act.</span>
+          <div class="what">
+            <div class="role" data-i18n="timeline_job1_role">Project Manager & Lead Instructor</div>
+            <div class="company" data-i18n="timeline_job1_company">Winfor · Software & Formación</div>
+            <p class="desc" data-i18n="timeline_job1_desc">Dirección de proyectos de software y docencia técnica fullstack (React, Node, Express, MongoDB, Supabase). Formación de nuevos perfiles IT y mentoría técnica.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when mono" data-i18n="timeline_job2_when">2022 - 2024</span>
+          <div class="what">
+            <div class="role" data-i18n="timeline_job2_role">I.T. Infrastructures Lead</div>
+            <div class="company" data-i18n="timeline_job2_company">Buff · Estrategia Digital</div>
+            <p class="desc" data-i18n="timeline_job2_desc">Liderazgo de infraestructuras IT, optimización de sistemas críticos y despliegue de soluciones tecnológicas alineadas con los objetivos de negocio.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when mono" data-i18n="timeline_job3_when">2019 - 2022</span>
+          <div class="what">
+            <div class="role" data-i18n="timeline_job3_role">Technical Coordinator & Systems</div>
+            <div class="company" data-i18n="timeline_job3_company">Smith&Nephew · Soluciones Digitales</div>
+            <p class="desc" data-i18n="timeline_job3_desc">Liderazgo técnico en sistemas y Backup.</p>
+            <span class="achieve" data-i18n="timeline_job3_achieve">Trabajo en equipos internacionales coordinando sistemas en 3 continentes.</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills & Stack Section -->
+    <section id="skills" class="fade-in" style="animation-delay: 0.24s;">
+      <div id="cheatsheets"></div>
+      <h2 class="eyebrow" data-i18n="skills_eyebrow">Skills & Stack</h2>
+      
+      <!-- Fila 1 & 2: Cheatsheets & Guías -->
+      <div class="cheatsheets-grid">
+        <a href="documents/Cheatsheet_sprint_1.pdf" target="_blank" rel="noopener noreferrer" class="cheatsheet-card">
+          <div class="cheatsheet-header">
+            <div class="cheatsheet-icon">
+              <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="24" height="24">
+            </div>
+            <span class="arrow-btn" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow a"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow b"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </span>
+          </div>
+          <div class="cheatsheet-info">
+            <h3 data-i18n="cheatsheet_html5_title">HTML5</h3>
+            <p data-i18n="cheatsheet_html5_desc">Estructura semántica, accesibilidad y tips fundamentales.</p>
+          </div>
+          <span class="cheatsheet-badge mono" data-i18n="cheatsheet_html5_badge">PDF · Sprint 1</span>
+        </a>
+
+        <a href="documents/CSS3 Cheatsheet_sprint_2_1.pdf" target="_blank" rel="noopener noreferrer" class="cheatsheet-card">
+          <div class="cheatsheet-header">
+            <div class="cheatsheet-icon">
+              <img src="https://cdn.simpleicons.org/css/3178C6" alt="CSS3" width="24" height="24">
+            </div>
+            <span class="arrow-btn" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow a"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow b"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </span>
+          </div>
+          <div class="cheatsheet-info">
+            <h3 data-i18n="cheatsheet_css3_title">CSS3</h3>
+            <p data-i18n="cheatsheet_css3_desc">Layouts con Flexbox, Grid, variables y trucos de diseño.</p>
+          </div>
+          <span class="cheatsheet-badge mono" data-i18n="cheatsheet_css3_badge">PDF · Sprint 2</span>
+        </a>
+
+        <a href="documents/%C2%BFC%C3%B3mo%20funciona%20realmente%20Claude%20Code%3F%20.pages" target="_blank" rel="noopener noreferrer" class="cheatsheet-card">
+          <div class="cheatsheet-header">
+            <div class="cheatsheet-icon">
+              <img src="https://cdn.simpleicons.org/claude/D97706" alt="Claude Code" width="24" height="24">
+            </div>
+            <span class="arrow-btn" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow a"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow b"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </span>
+          </div>
+          <div class="cheatsheet-info">
+            <h3 data-i18n="cheatsheet_claude_title">Claude Code Guide</h3>
+            <p data-i18n="cheatsheet_claude_desc">Guía de uso y funcionamiento de agentes de IA en CLI.</p>
+          </div>
+          <span class="cheatsheet-badge mono" data-i18n="cheatsheet_claude_badge">Documento · Pages</span>
+        </a>
+
+        <a href="documents/Cheatsheet_sprint_5.pdf" target="_blank" rel="noopener noreferrer" class="cheatsheet-card">
+          <div class="cheatsheet-header">
+            <div class="cheatsheet-icon">
+              <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="24" height="24">
+            </div>
+            <span class="arrow-btn" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow a"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="arrow b"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </span>
+          </div>
+          <div class="cheatsheet-info">
+            <h3 data-i18n="cheatsheet_fullstack_title">Fullstack Cheatsheet</h3>
+            <p data-i18n="cheatsheet_fullstack_desc">APIs, bases de datos y patrones de backend moderno.</p>
+          </div>
+          <span class="cheatsheet-badge mono" data-i18n="cheatsheet_fullstack_badge">PDF · Sprint 5</span>
+        </a>
+      </div>
+
+      <!-- Fila 3 & 4: Skills Principales -->
+      <div id="skills-container">
+        <div class="skills-cards-grid">
+          <article class="card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="26" height="26" loading="lazy">
+              </div>
+              <span class="skill-badge mono" data-i18n="skill_react_badge">Frontend</span>
+            </div>
+            <h3 data-i18n="skill_react_title">React</h3>
+            <p data-i18n="skill_react_desc">Componentes funcionales, hooks personalizados, estado reactivo y construcción de Single Page Applications (SPAs).</p>
+            <div class="skill-tags">
+              <span class="tag mono">Hooks</span>
+              <span class="tag mono">State</span>
+              <span class="tag mono">SPA</span>
+              <span class="tag mono">Vite</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Supabase" width="26" height="26" loading="lazy">
+              </div>
+              <span class="skill-badge mono" data-i18n="skill_supabase_badge">BaaS / SQL</span>
+            </div>
+            <h3 data-i18n="skill_supabase_title">Supabase</h3>
+            <p data-i18n="skill_supabase_desc">Backend-as-a-Service basado en PostgreSQL, autenticación de usuarios, APIs generadas al vuelo y realtime subscriptions.</p>
+            <div class="skill-tags">
+              <span class="tag mono">PostgreSQL</span>
+              <span class="tag mono">BaaS</span>
+              <span class="tag mono">Auth</span>
+              <span class="tag mono">Realtime</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" width="26" height="26" loading="lazy">
+              </div>
+              <span class="skill-badge mono" data-i18n="skill_mongodb_badge">NoSQL</span>
+            </div>
+            <h3 data-i18n="skill_mongodb_title">MongoDB</h3>
+            <p data-i18n="skill_mongodb_desc">Base de datos no relacional orientada a documentos BSON, diseño de esquemas flexibles y modelado con Mongoose.</p>
+            <div class="skill-tags">
+              <span class="tag mono">NoSQL</span>
+              <span class="tag mono">Documents</span>
+              <span class="tag mono">Mongoose</span>
+              <span class="tag mono">Atlas</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node" width="26" height="26" loading="lazy">
+              </div>
+              <span class="skill-badge mono" data-i18n="skill_node_badge">Backend</span>
+            </div>
+            <h3 data-i18n="skill_node_title">Node</h3>
+            <p data-i18n="skill_node_desc">Entorno de ejecución backend con JavaScript, desarrollo de APIs RESTful escalables, Express.js y microservicios.</p>
+            <div class="skill-tags">
+              <span class="tag mono">Express</span>
+              <span class="tag mono">REST APIs</span>
+              <span class="tag mono">Async</span>
+              <span class="tag mono">Middleware</span>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="skills-more-title" data-i18n="skills_more_title">Otras tecnologías & herramientas</h3>
+        <div class="skills-grid">
+          <div class="skill-chip" data-i18n-attr="title:skill_chip_ts_title" title="Tipado estático para JavaScript, interfaces y mayor robustez en proyectos grandes.">
+            <div class="skill-chip-top">
+              <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" width="20" height="20" loading="lazy">
+              <span class="skill-chip-name" data-i18n="skill_chip_ts_name">TypeScript</span>
+            </div>
+            <span class="skill-chip-tag mono" data-i18n="skill_chip_ts_tag">Tipado</span>
+          </div>
+
+          <div class="skill-chip" data-i18n-attr="title:skill_chip_git_title" title="Control de versiones distribuido, branching y flujos de trabajo colaborativos.">
+            <div class="skill-chip-top">
+              <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="20" height="20" loading="lazy">
+              <span class="skill-chip-name" data-i18n="skill_chip_git_name">Git</span>
+            </div>
+            <span class="skill-chip-tag mono" data-i18n="skill_chip_git_tag">Tooling</span>
+          </div>
+
+          <div class="skill-chip" data-i18n-attr="title:skill_chip_docker_title" title="Contenedores para entornos de desarrollo consistentes y despliegue continuo.">
+            <div class="skill-chip-top">
+              <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="20" height="20" loading="lazy">
+              <span class="skill-chip-name" data-i18n="skill_chip_docker_name">Docker</span>
+            </div>
+            <span class="skill-chip-tag mono" data-i18n="skill_chip_docker_tag">DevOps</span>
+          </div>
+
+          <div class="skill-chip" data-i18n-attr="title:skill_chip_next_title" title="Renderizado híbrido SSR/SSG, enrutamiento basado en archivos y optimización fullstack.">
+            <div class="skill-chip-top">
+              <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" width="20" height="20" loading="lazy">
+              <span class="skill-chip-name" data-i18n="skill_chip_next_name">Next.js</span>
+            </div>
+            <span class="skill-chip-tag mono" data-i18n="skill_chip_next_tag">Framework</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links / Contact Section -->
+    <section id="contacto" class="fade-in" style="animation-delay: 0.32s;">
+      <h2 class="eyebrow" data-i18n="social_eyebrow">Contacto & Redes</h2>
+      <div class="links">
+        <ul class="pills">
+          <li>
+            <a class="pill" href="https://github.com" target="_blank" rel="noreferrer" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="pill" href="https://linkedin.com" target="_blank" rel="noreferrer" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.88 0-1.6.72-1.6 1.61 0 .88.72 1.6 1.6 1.6.89 0 1.61-.72 1.61-1.6 0-.89-.72-1.61-1.61-1.61z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a class="pill" href="mailto:llgalindoe@outlook.com" data-i18n-attr="title:social_write_msg" title="Escribir mensaje">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+                <path d="m3.5 7 8.5 6 8.5-6"></path>
+              </svg>
+              <span data-i18n="social_write_msg">Escribir mensaje</span>
+            </a>
+          </li>
+        </ul>
+
+        <button type="button" class="mail" id="copyEmailBtn" data-i18n-attr="title:social_copy_email" title="Copiar correo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+            <path d="m3.5 7 8.5 6 8.5-6"></path>
+          </svg>
+          <span>llgalindoe@outlook.com</span>
+          <span class="copy-feedback mono" data-i18n="social_copy_email">Copiar</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ask AI Floating Widget -->
+  <div class="askai" id="askAiWidget">
+    <div class="askai-pop" id="askAiPop">
+      <div class="askai-title">
+        <span data-i18n="askai_title">Ask AI · Lluís Galindo</span>
+        <button type="button" class="askai-close" id="askAiClose" aria-label="Cerrar">✕</button>
+      </div>
+      <p class="askai-desc" data-i18n="askai_desc">Descubre detalles sobre el perfil, trayectoria y especialidad de Lluís:</p>
+      
+      <div class="askai-quick">
+        <button type="button" class="askai-chip" data-topic="experience" data-i18n="askai_chip_exp">💼 Experiencia y liderazgo IT</button>
+        <button type="button" class="askai-chip" data-topic="skills" data-i18n="askai_chip_skills">💻 Stack técnico y metodologías</button>
+        <button type="button" class="askai-chip" data-topic="ai" data-i18n="askai_chip_ai">🤖 IA aplicada al desarrollo</button>
+        <button type="button" class="askai-chip" data-topic="contact" data-i18n="askai_chip_contact">✉️ Colaboraciones y contacto</button>
+      </div>
+
+      <div class="askai-answer" id="askAiAnswer"></div>
+
+      <button type="button" class="askai-copy" id="askAiCopyPrompt">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span id="copyPromptText" data-i18n="askai_copy_prompt">Copiar prompt para ChatGPT / Claude</span>
+      </button>
+    </div>
+
+    <button type="button" class="askai-btn" id="askAiTrigger" data-i18n-attr="aria-label:askai_title" aria-label="Ask AI · Lluís Galindo">
+      <span class="askai-hint" data-i18n="askai_btn_label">Preguntar a IA</span>
+      <svg class="askai-sparkle" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Footer con Dark Mode -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-content">
+        <p data-i18n="footer_copy">© 2026 Lluís Galindo · Fullstack Developer & PM</p>
+        <nav class="footer-nav">
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:llgalindoe@outlook.com" data-i18n="footer_contact">Contacto</a>
+          <button class="dark-mode-toggle" id="darkModeToggle" data-i18n-attr="aria-label:footer_theme,title:footer_theme" aria-label="Cambiar tema" title="Cambiar tema">
+            <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" style="display: none;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script único con i18n dinámico -->
+  <script src="script.js?v=1.1"></script>
+</body>
+</html>
