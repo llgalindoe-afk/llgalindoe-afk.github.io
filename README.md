@@ -1,5 +1,0 @@
-# primerejercicio-git
-
-The Bridge
-
-
